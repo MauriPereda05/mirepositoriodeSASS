@@ -1,0 +1,45 @@
+//Variables
+
+$main-mundo : red;
+$main-universo: orange;
+
+h1{
+    background-color: $main-universo;
+}
+
+p{
+    background-color: $main-mundo;
+}
+
+//anidamiento
+
+section {
+    background-color: red;
+  
+    h2 {
+      background-color: yellow;
+  
+      p {
+        color: orange;
+      }
+    }
+  }
+
+//  Ampersan Padre(&)
+
+.container {
+    background-color: lightblue;
+
+    &-item {
+        font-size: 30px;
+
+        &-link {
+            color: white;
+        }
+    }
+}
+
+//Modularidad
+
+@import 'estilo.scss'
+
